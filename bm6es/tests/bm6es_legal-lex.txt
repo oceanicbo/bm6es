@@ -1,0 +1,13 @@
+
+VAR a;
+VAR b;
+VAR c;
+
+a=0;
+b=3;
+
+do 
+  c=(a++)+(b++);
+while (c);
+
+return c;
