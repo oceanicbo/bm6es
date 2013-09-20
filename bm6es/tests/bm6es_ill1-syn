@@ -1,0 +1,14 @@
+//error in FOR's parameter 
+//MUST give ASSIGN right after FOR 
+
+VAR floatc; 
+VAR intd;
+intd =1;
+
+FOR intd STEP 1 TO 32 
+    DO 
+BEGIN
+    floatc = -3.0;
+    GO floatc;
+    JUMP intd;
+END

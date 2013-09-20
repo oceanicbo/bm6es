@@ -1,0 +1,21 @@
+//correct
+
+VAR inta;
+VAR intx;
+VAR inty;
+inta=3;
+intb=6;
+floatc = 2.5;
+floatd = 3.2;
+ide = correct;
+
+start = 2;
+
+FOR i =start STEP 1 TO 32 
+    DO 
+BEGIN
+    GO cos((inta-1)*sin(floatd))+sqrt((intb)/(floatc));
+    JUMP stepone;
+    TURN stepzero;
+    i = i + 1;
+END    
