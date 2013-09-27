@@ -1,0 +1,16 @@
+
+JUMP 80;
+
+//declaring drawing a 4 sided shape with varying angles (with four parameters)
+PROCEDURE poly {
+GO 40;
+TURN PARAM;
+GO 40;
+TURN PARAM;
+GO 40;
+TURN PARAM;
+GO 40;
+TURN PARAM;
+}
+
+CALL poly 80 100 80 100;
