@@ -1,0 +1,12 @@
+VAR i;
+
+//should be eight accending lines
+i=0;
+TURN 90;
+WHILE(i<8) {
+    GO 20;
+    TURN 270;
+    JUMP 5;
+    TURN 90;
+    i=i+1;
+}
