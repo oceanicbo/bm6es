@@ -1,0 +1,68 @@
+//Test case in D5
+
+VAR a;
+VAR b;
+VAR c;
+VAR d;
+VAR e;
+VAR f;
+VAR g;
+
+
+i=20;
+a=10;
+b=1;
+//c=1;
+//d=1;
+//e=1;
+f=0;
+
+IF(a>0)
+{ 
+  IF (b==0)
+  {
+    a=a-1;
+    b=b-1;
+  }
+  ELSE
+  {
+  FOR c=20
+    STEP 1
+    TO 100
+  DO
+    BEGIN
+      GO 100; 
+      TURN 20;
+      JUMP 30;
+      JUMP 20;
+      TURN 30;
+      g=100;
+    END
+  }
+}
+
+PROCEDURE add
+{ 
+  g=d+e-c;  //error 1 ----no initial value when calculate
+  d=a*b+c-e/f; //error 2 ---div 0
+  GO PARAM;
+  TURN PARAM;
+  GO PARAM;
+  TURN PARAM;
+}
+CALL add ;  //error 3-- parameters not match
+CALL add 300 200 200 30;
+
+FOR c=20
+  STEP 1
+  TO 100
+  DO
+BEGIN
+  GO 100; 
+    TURN 20;
+    JUMP 30;
+      JUMP 20;
+      TURN 30;
+      g=100;
+END
+  
