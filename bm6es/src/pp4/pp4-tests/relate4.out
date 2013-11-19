@@ -1,0 +1,24 @@
+
+*** Error line 4.
+  1 < 2.0;
+    ^
+*** Incompatible operands: int < double
+
+
+*** Error line 5.
+  1 > 2.0;
+    ^
+*** Incompatible operands: int > double
+
+
+*** Error line 6.
+  1 <= 2.0;
+    ^^
+*** Incompatible operands: int <= double
+
+
+*** Error line 7.
+  1 >= 2.0;
+    ^^
+*** Incompatible operands: int >= double
+

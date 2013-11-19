@@ -1,0 +1,36 @@
+
+*** Error line 3.
+  return 1.0;
+         ^^^
+*** Incompatible return: double given, int expected
+
+
+*** Error line 4.
+  return true;
+         ^^^^
+*** Incompatible return: bool given, int expected
+
+
+*** Error line 10.
+  return 1;
+         ^
+*** Incompatible return: int given, double expected
+
+
+*** Error line 11.
+  return true;
+         ^^^^
+*** Incompatible return: bool given, double expected
+
+
+*** Error line 16.
+  return 1;
+         ^
+*** Incompatible return: int given, bool expected
+
+
+*** Error line 17.
+  return 1.0;
+         ^^^
+*** Incompatible return: double given, bool expected
+

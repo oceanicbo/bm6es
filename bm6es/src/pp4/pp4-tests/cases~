@@ -1,0 +1,136 @@
+# cases file format:
+#
+# filename; points; comment;
+#
+# cases file format:
+#
+# filename; points; comment;
+#
+# the trailing semicolon is optional.  no newlines are allowed in the comment.
+# test may be commented out using a '#' (sh/perl style comments).
+#
+# tests that are to be run interactively should be formatted as follows:
+#
+# filename; points; comment; I;
+#
+# again, with trailing semicolon optional.
+#
+# at some point in the file, a line of the format:
+#
+# maxscore = #
+#
+# must exist in the file.  this line specifies the maximum possible score
+# on the assignment.
+#
+
+maxscore = 100
+
+# First, we have about 20 tests taken from pp3checkpoint
+# I would think everyone _should_ pass these with ease...
+baddecl1.decaf; 1; global/local/instance variable of undeclared class type should be error; F
+baddecl2.decaf; 1; function parameter/return type of undeclared class type should be error; F
+baddecl3.decaf; 1; extends from undeclared class should be error;F
+baddecl4.decaf; 1; implements undeclared interface should be error;F
+baddecl5.decaf; 1; array variable of undeclared class element type should be error;F
+baddecl6.decaf; 1; extends from interface type should be error;F
+baddecl7.decaf; 1; implements class type should be error;F
+baddecl8.decaf; 1; use of declared variable/function as if class/interface type should be error;F
+badscope1.decaf; 1; two variables in same scope with same name should be reported as conflict; F
+badscope2.decaf; 1; two global functions with same name should be reported as conflict; F
+badscope3.decaf; 1; two variables/methods in a class with same name should be reported as conflict; F
+badscope4.decaf; 1; two function parameters with same name should be reported as conflict; F
+badscope5.decaf; 1; two classes with same name should be reported as conflict; F
+badscope6.decaf; 1; two interfaces with same name should be reported as conflict; F
+badscope7.decaf; 1; two global variable/function/class/interfaces with same name should be reported as conflict; F
+badoverride1.decaf; 1; redefinition of an inherited instance variable in a subclass should be reported as conflict; F
+badoverride2.decaf; 1; re-use of method as variable (or vice versa) from parent to subclass should be reported as conflict; F
+badoverride3.decaf; 1; subclass override with fewer parameters than inherited should be reported as conflict; F
+badoverride4.decaf; 1; subclass override which differs in param types than inherited should be reported as conflict; F
+badoverride5.decaf; 1; subclass override which differs in return type from inherited should be reported as conflict; F
+badoverride6.decaf; 1; subclass override which differs in array param/return types from inherited should be reported as conflict; F
+var1.decaf; 2; global variables should be accessible everywhere (inside function, blocks, classes, etc.); F
+var2.decaf; 2; locals and instance variables should shadow global variable of same name; F
+var3.decaf;1; should report error accessing globals as though class field; F
+var4.decaf; 2; inherited ivar should shadow global of same name
+arith1.decaf; 1; should accept +,-,*,/,% on numbers (both int or both double or single int/double for unary minus)
+arith2.decaf; 2; should report error on +,-,*,/ applied to non-numbers (strings, classes, functions, etc) ; F
+relate1.decaf; 1; should accept ==/!= applied to 2 compatible operands (e.g. both ints, strings, arrays, objects/null)
+relate2.decaf; 2; should report error on ==/!= applied to 2 incompatible operands (e.g. int == bool and so on); F
+relate3.decaf; 1; should accept relational ops on numbers (both int or both double)
+relate4.decaf; 1; should report error on relational ops applied to incompatible types (e.g. int < double); F
+relate5.decaf; 1; should report error on relational ops applied to non-numbers (objects, bools, strings, etc); F
+logic1.decaf; 1; should accept &&,||,! applied to booleans
+logic2.decaf; 2; should report error on &&,||,! applied to non-booleans; F
+logic3.decaf; 1; should accept any boolean in test of if/while/for
+logic4.decaf; 2; should report error on non-boolean in test of if/while/for; F
+assign2.decaf; 1; should accept assignment to base type from appropriate constant (int/double/bool/string)
+assign3.decaf; 2; should report error on incompatible assignment (e.g. int = string); F
+assign4.decaf; 2; should report error on attempt to assign to variable in closed scope; F
+assign5.decaf; 1; should report error on attempt to assign to function; F
+assign6.decaf; 1; should accept use of assignment expression
+array1.decaf; 1; should accept correctly formed call to NewArray
+array2.decaf; 2; should report error on attempt to assign NewArray result to incompatible variable; F
+array3.decaf; 2; should report error on incorrect args to NewArray (non-int length, element type void or undefined class); F
+array4.decaf; 1; should accept integer as array subscript on both single and multi-dim array
+array5.decaf; 2; should report error on non-integer as array subscript; F
+array6.decaf; 2; should report error on attempt to apply subscript to non-array; F
+array7.decaf; 1; should accept correct assignment of arrays (including multi-dim)
+array8.decaf; 2; should accept .length() correctly applied to array and result is int type
+array9.decaf; 1; should report error on incorrect use of .length (e.g. w/o parens, with args, applied to non-array, etc); F
+array11.decaf; 1; should accept array element as instance of base type
+class1.decaf; 2; should accept correct access of fields within class scope (with/without this.)
+class2.decaf; 2; should accept correct access of inherited fields within class scope (with/without this.)
+class3.decaf; 2; should accept correct use of this inside class scope and report error outside; F
+class4.decaf; 2; should report error on attempt to access non-existent class field (variable or method); F
+class5.decaf; 2; should report error on attempt to access private variable outside class scope; F
+class6.decaf; 2; should accept correct call to method/inherited method ouside class scope
+class7.decaf; 1; should accept proper call to New
+class8.decaf; 1; should report error on attempt to call New of undeclared class; F
+class9.decaf; 2; should report error on attempt to access field (variable or method) from non-class type; F
+compat1.decaf; 2; should report error on assignment between incompatible objects or illegal object downcast; F
+compat2.decaf; 2; should accept correct object upcast to parent in assignment, parameter passing, and function return
+compat3.decaf; 1; should accept null in place of object (assignment, parameter passing, and function return)
+compat4.decaf; 1; should accept correct assignment of objects
+compat5.decaf; 2; should accept object upcast to interface in assignment, parameter passing, and function return
+interface1.decaf; 1; should accept class with proper implementation of declared inteface
+interface2.decaf; 1; should accept class implementing interface declared later in file
+interface3.decaf; 2; should report error when class fails to implement all methods in interface; F
+interface4.decaf; 1; should report error for each distinct interface that a class fails to implement; F
+interface5.decaf; 1; should accept correct interface method call on object of interface type
+interface6.decaf; 2; should report error for incorrect method call on object of interface type
+funcdef1.decaf; 1; should accept function with parameters of all base types
+funcdef2.decaf; 2; should accept shadowing of parameters in function body (and use innermost type for checking in that context)
+funcdef3.decaf; 2; should report error on function return of incompatible type; F
+funcdef4.decaf; 2; should report error on attempt to return value from void function and vice versa; F
+funcdef5.decaf; 1; should correctly handle calls to recursive function; F
+funcall1.decaf; 1; should accept expressions of correct type as parameters
+funcall2.decaf; 2; should report error on wrong number of arguments in call; F
+funcall3.decaf; 2; should report error on wrong type of argument in call; F
+funcall4.decaf; 1; should accept proper call to function defined later in file
+funcall5.decaf; 1; should accept correct use of function call result
+funcall6.decaf; 2; should report error on incompatible use of function call result; F
+funcall8.decaf; 1; should report error on attempt to use return from call to void function; F
+funcall9.decaf; 2; should report error on attempt to call undeclared function or call variable as if function; F
+break1.decaf; 1; should accept break inside for/while loop
+break2.decaf; 2; should report error on break outside for/while loop; F
+break3.decaf; 2; should accept break inside nested for/while loop
+io1.decaf; 1; should accept bool/int/string args to Print
+io2.decaf; 2; should report error on Print of non-bool/int/string (e.g. doubles, arrays, void, etc); F
+io3.decaf; 1; should correctly handle result types from ReadInteger/ReadLine; F
+cascade1.decaf; 1; should not re-report already reported errors in expressions; F
+cascade2.decaf; 1; should not re-report already reported errors in parameters/call/return; F
+cascade3.decaf; 1; should not re-report already reported errors for arrays (e.g. arr[error]); F
+cascade5.decaf; 1; should not re-report already reported errors for undeclared variables (undeclared[0] = 10, etc); F
+cascade7.decaf; 1; should not re-report already reported errors in statements (e.g. Print(error), NewArray(error, int), if (error)); F
+cascade8.decaf; 1; should not suppress unrelated errors (each distinct error reported separately, e.g. wrong arg and wrong return from NewArray);F
+context.decaf; 2; errors should give appropriate context (line num, location for identifier, errors generally reported in lexical order, etc.)
+
+#obscure2.decaf; 0; should report error on use of classname as if instance
+#obscure3.decaf; 0; class that extends from itself
+#obscure4.decaf; 0; function that returns void return call to fn return void
+#obscure5.decaf; 0; should not re-report already reported errors in field access (e.g. errorType.field)
+#if/when Print becomes normal function need test for void return value
+#class13.decaf;0; use of ivar as method & vice versa (this isn't really so obscure, but everyone reports it a different way and that's a hassle
+
+#missing a test with an upcast between classes who defns are only seen later in file (see new.decaf file)
+

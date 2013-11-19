@@ -1,0 +1,13 @@
+void main()
+{
+  while(true)
+  {
+    while(false) 1;
+    break;
+  }
+  for (1; true;1) {
+     for(1; false;1) {
+    }
+    break;
+ }
+}

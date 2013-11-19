@@ -1,0 +1,7 @@
+class Cow { int a; void Moo() {} }
+void main()
+{
+    Cow b;
+    b.Moo;
+    b.a();
+}

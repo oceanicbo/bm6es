@@ -1,0 +1,13 @@
+int[] g;
+double[] h;
+class A {
+	int[] Binky() { return g;}
+	void Dinky(int[][] a) {}
+	void Winky(int[][] a) {}
+}
+class B extends A {
+	double[] Binky() { return h;}
+	void Dinky(double[][] a) {}
+	void Winky(int[] a) {}
+}
+void main() {}

@@ -1,0 +1,6 @@
+interface Winky { void Do(int a); }
+void main()
+{
+	Winky w;
+	w.NotImplemented();
+}

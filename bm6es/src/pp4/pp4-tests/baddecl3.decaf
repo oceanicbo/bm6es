@@ -1,0 +1,2 @@
+class Binky extends Missing {}
+void main() {}

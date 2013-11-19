@@ -1,0 +1,12 @@
+
+*** Error line 12.
+  betsy = wilbur;
+        ^
+*** Incompatible operands: Cow = Pig
+
+
+*** Error line 13.
+  betsy = fred;
+        ^
+*** Incompatible operands: Cow = Animal
+

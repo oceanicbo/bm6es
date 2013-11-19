@@ -1,0 +1,15 @@
+class Cow {
+	int field1;
+	void Method1() {
+		field1 = 10;
+	}
+	void Method2() {
+		Method1();
+	}
+}
+void main()
+{
+   Cow b;
+   b.field1;
+   b.Method1();
+}

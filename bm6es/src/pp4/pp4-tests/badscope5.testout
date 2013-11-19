@@ -1,0 +1,6 @@
+
+*** Error line 4.
+class Binky {
+      ^^^^^
+*** Declaration of 'Binky' here conflicts with declaration on line 1
+

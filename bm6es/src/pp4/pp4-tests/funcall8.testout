@@ -1,0 +1,6 @@
+
+*** Error line 7.
+  a = foo();
+    ^
+*** Incompatible operands: int = void
+

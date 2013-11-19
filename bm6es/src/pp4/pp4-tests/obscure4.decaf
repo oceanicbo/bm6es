@@ -1,0 +1,8 @@
+void Binky() {}
+
+void main()
+{
+  // gcc gets this case wrong too.  Java doesn't though!
+   return Binky();
+}
+

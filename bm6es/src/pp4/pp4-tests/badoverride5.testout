@@ -1,0 +1,6 @@
+
+*** Error line 5.
+	double TapDance(int a, double b) { return 1.0;}
+               ^^^^^^^^
+*** Method 'TapDance' must match inherited type signature
+

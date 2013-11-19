@@ -1,0 +1,15 @@
+void main()
+{
+// error on declaration
+  Missing[] m; 
+  int[] arr;
+  double d;
+
+  m = NewArray(10, Missing);
+
+ // this should be ok, given already ready reported about m
+  m[0];
+
+// error for undecl n should be reported once, second distinct error in assign also
+  d = arr[n]; 
+}

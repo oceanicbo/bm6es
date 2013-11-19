@@ -1,0 +1,24 @@
+
+*** Error line 3.
+  Print(b);
+        ^
+*** No declaration found for variable 'b'
+
+
+*** Error line 4.
+  NewArray(a, bool);
+           ^
+*** No declaration found for variable 'a'
+
+
+*** Error line 5.
+  while(c());
+        ^
+*** No declaration found for function 'c'
+
+
+*** Error line 6.
+  if (d) {}
+      ^
+*** No declaration found for variable 'd'
+

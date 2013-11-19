@@ -1,0 +1,138 @@
+
+*** Error line 13.
+  1 == 2.0;
+    ^^
+*** Incompatible operands: int == double
+
+
+*** Error line 14.
+  1 != 2.0;
+    ^^
+*** Incompatible operands: int != double
+
+
+*** Error line 16.
+  1 == true;
+    ^^
+*** Incompatible operands: int == bool
+
+
+*** Error line 17.
+  1 != true;
+    ^^
+*** Incompatible operands: int != bool
+
+
+*** Error line 19.
+  1 == betsy;
+    ^^
+*** Incompatible operands: int == Cow
+
+
+*** Error line 20.
+  1 != betsy;
+    ^^
+*** Incompatible operands: int != Cow
+
+
+*** Error line 22.
+  1 == null;
+    ^^
+*** Incompatible operands: int == null
+
+
+*** Error line 23.
+  1 != null;
+    ^^
+*** Incompatible operands: int != null
+
+
+*** Error line 25.
+  2.0 == true;
+      ^^
+*** Incompatible operands: double == bool
+
+
+*** Error line 26.
+  2.0 != true;
+      ^^
+*** Incompatible operands: double != bool
+
+
+*** Error line 28.
+  2.0 == betsy;
+      ^^
+*** Incompatible operands: double == Cow
+
+
+*** Error line 29.
+  2.0 != betsy;
+      ^^
+*** Incompatible operands: double != Cow
+
+
+*** Error line 31.
+  2.0 == null;
+      ^^
+*** Incompatible operands: double == null
+
+
+*** Error line 32.
+  2.0 != null;
+      ^^
+*** Incompatible operands: double != null
+
+
+*** Error line 34.
+  true == betsy;
+       ^^
+*** Incompatible operands: bool == Cow
+
+
+*** Error line 35.
+  true != betsy;
+       ^^
+*** Incompatible operands: bool != Cow
+
+
+*** Error line 37.
+  true == null;
+       ^^
+*** Incompatible operands: bool == null
+
+
+*** Error line 38.
+  true != null;
+       ^^
+*** Incompatible operands: bool != null
+
+
+*** Error line 40.
+  arr != dArr;
+      ^^
+*** Incompatible operands: int[] != double[]
+
+
+*** Error line 41.
+  arr == betsy;
+      ^^
+*** Incompatible operands: int[] == Cow
+
+
+*** Error line 42.
+  arr != 1;
+      ^^
+*** Incompatible operands: int[] != int
+
+
+*** Error line 44.
+  wilbur == betsy;
+         ^^
+*** Incompatible operands: Pig == Cow
+
+
+*** Error line 45.
+  betsy != wilbur;
+        ^^
+*** Incompatible operands: Cow != Pig
+

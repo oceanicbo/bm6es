@@ -1,0 +1,12 @@
+
+*** Error line 18.
+     var = "bark";
+         ^
+*** Incompatible operands: int = string
+
+
+*** Error line 19.
+	Do(3);
+        ^^
+*** Function 'Do' expects 0 arguments but 1 given
+

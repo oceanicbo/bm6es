@@ -1,0 +1,48 @@
+
+*** Error line 2.
+class Parsnip { }
+      ^^^^^^^
+*** Declaration of 'Parsnip' here conflicts with declaration on line 1
+
+
+*** Error line 5.
+bool Carrot;
+     ^^^^^^
+*** Declaration of 'Carrot' here conflicts with declaration on line 4
+
+
+*** Error line 8.
+int[] Zucchini;
+      ^^^^^^^^
+*** Declaration of 'Zucchini' here conflicts with declaration on line 7
+
+
+*** Error line 11.
+void Onion() {}
+     ^^^^^
+*** Declaration of 'Onion' here conflicts with declaration on line 10
+
+
+*** Error line 14.
+void Turnip() {}
+     ^^^^^^
+*** Declaration of 'Turnip' here conflicts with declaration on line 13
+
+
+*** Error line 17.
+class Potato {}
+      ^^^^^^
+*** Declaration of 'Potato' here conflicts with declaration on line 16
+
+
+*** Error line 20.
+class Rutabaga {}
+      ^^^^^^^^
+*** Declaration of 'Rutabaga' here conflicts with declaration on line 19
+
+
+*** Error line 23.
+interface Mushroom {}
+          ^^^^^^^^
+*** Declaration of 'Mushroom' here conflicts with declaration on line 22
+

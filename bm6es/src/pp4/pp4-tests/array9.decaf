@@ -1,0 +1,17 @@
+class NotArray { double length(string a) { return 1.5; }}
+void main()
+{
+     int[] arr;
+     int num;
+     NotArray c;
+    double d;
+
+ // error because of missing parens
+     num = arr.length;
+
+// error because of unexpected arg to length
+     arr.length(10);
+
+// this should be fine
+     d = c.length("hello"); 
+}

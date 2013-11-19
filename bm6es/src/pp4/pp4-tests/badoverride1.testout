@@ -1,0 +1,6 @@
+
+*** Error line 10.
+   int SUID;
+       ^^^^
+*** Declaration of 'SUID' here conflicts with declaration on line 4
+

@@ -1,0 +1,12 @@
+
+*** Error line 1.
+Unknown function1() {}
+^^^^^^^
+*** No declaration found for type 'Unknown'
+
+
+*** Error line 3.
+void function2(int a, Missing b) {}
+                      ^^^^^^^
+*** No declaration found for type 'Missing'
+

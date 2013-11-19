@@ -1,0 +1,6 @@
+
+*** Error line 2.
+interface Winky {}
+          ^^^^^
+*** Declaration of 'Winky' here conflicts with declaration on line 1
+

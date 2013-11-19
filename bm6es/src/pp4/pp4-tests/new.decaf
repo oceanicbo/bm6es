@@ -1,0 +1,17 @@
+
+void main() {
+  Cow a;
+  Jersey j;
+  a = j;
+}
+
+class Jersey extends Cow {}
+
+class Animal {}
+
+class Cow extends Animal {}
+
+
+
+
+

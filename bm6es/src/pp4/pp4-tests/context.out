@@ -1,0 +1,54 @@
+
+*** Error line 7.
+       return;
+       ^^^^^^
+*** Incompatible return: void given, int expected
+
+
+*** Error line 8.
+    return 1.0 * 3.0;
+           ^^^^^^^^^
+*** Incompatible return: double given, int expected
+
+
+*** Error line 14.
+   undeclared = 5;
+   ^^^^^^^^^^
+*** No declaration found for variable 'undeclared'
+
+
+*** Error line 15.
+   1 + 1.5;
+     ^
+*** Incompatible operands: int + double
+
+
+*** Error line 16.
+   inuse + 4 * (2 / missing);
+                    ^^^^^^^
+*** No declaration found for variable 'missing'
+
+
+*** Error line 17.
+   Print(d);
+         ^
+*** Incompatible argument 1: double given, int/bool/string expected
+
+
+*** Error line 18.
+   Binky(Dinky(4));
+   ^^^^^
+*** Function 'Binky' expects 2 arguments but 1 given
+
+
+*** Error line 19.
+   Binky("string", 3);
+         ^^^^^^^^
+*** Incompatible argument 1: string given, int expected
+
+
+*** Error line 20.
+   break;
+   ^^^^^
+*** break is only allowed inside a loop
+

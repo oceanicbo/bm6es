@@ -1,0 +1,6 @@
+
+*** Error line 3.
+	Unknown[] arr;
+        ^^^^^^^
+*** No declaration found for type 'Unknown'
+

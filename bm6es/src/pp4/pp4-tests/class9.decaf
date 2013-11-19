@@ -1,0 +1,7 @@
+void main()
+{
+  int a;
+  
+  a.field;
+  a.field();
+}

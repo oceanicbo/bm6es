@@ -1,0 +1,27 @@
+class Animal {}
+
+class Cow extends Animal {}
+
+class Pig extends Animal {}
+
+void main()
+{
+  Cow betsy;
+  Animal mammal;
+
+  true < false;
+  true > false;
+  true <= false;
+  true >= false;
+
+  betsy < betsy;
+  betsy > betsy;
+  betsy <= betsy;
+  betsy >= betsy;
+
+  betsy < mammal;
+  betsy > mammal;
+  betsy <= mammal;
+  betsy >= mammal;
+
+}

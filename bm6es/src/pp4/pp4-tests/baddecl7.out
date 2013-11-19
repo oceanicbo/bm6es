@@ -1,0 +1,6 @@
+
+*** Error line 2.
+class Winky implements Binky {}
+                       ^^^^^
+*** No declaration found for interface 'Binky'
+

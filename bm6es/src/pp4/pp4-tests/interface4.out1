@@ -1,0 +1,11 @@
+
+*** Error line 4.
+class Inky implements Winky, Binky {}
+                             
+*** Class 'Inky' does not implement entire interface 'Binky'
+
+*** Error line 4.
+class Inky implements Winky, Binky {}
+                      
+*** Class 'Inky' does not implement entire interface 'Winky'
+

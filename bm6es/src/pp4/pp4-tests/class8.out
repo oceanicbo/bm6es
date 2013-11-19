@@ -1,0 +1,6 @@
+
+*** Error line 3.
+  New(Cow);
+      ^^^
+*** No declaration found for class 'Cow'
+

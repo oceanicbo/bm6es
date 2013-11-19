@@ -1,0 +1,14 @@
+int global;
+
+class Animal {
+    string global;
+    void Init() { global = "hello"; }
+}
+void main() {
+  global = 4;
+  {
+    bool global;
+    global = true;
+   }
+  global = 10;
+}

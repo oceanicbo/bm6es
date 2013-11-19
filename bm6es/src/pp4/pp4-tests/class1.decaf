@@ -1,0 +1,13 @@
+class Cow {
+	int field1;
+	void Method1() {
+		field1 = 10;
+		this.field1 = 5;
+	}
+	void Method2() {
+		Method1();
+		this.Method1();
+	}
+}
+void main()
+{}

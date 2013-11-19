@@ -1,0 +1,72 @@
+
+*** Error line 7.
+  !1;
+  ^
+*** Incompatible operand: ! int
+
+
+*** Error line 8.
+  !2.0;
+  ^
+*** Incompatible operand: ! double
+
+
+*** Error line 9.
+  !betsy;
+  ^
+*** Incompatible operand: ! Cow
+
+
+*** Error line 10.
+  !null; 
+  ^
+*** Incompatible operand: ! null
+
+
+*** Error line 12.
+  1 && 2;
+    ^^
+*** Incompatible operands: int && int
+
+
+*** Error line 13.
+  1.0 && 2.0;
+      ^^
+*** Incompatible operands: double && double
+
+
+*** Error line 14.
+  betsy && betsy;
+        ^^
+*** Incompatible operands: Cow && Cow
+
+
+*** Error line 15.
+  null && null;
+       ^^
+*** Incompatible operands: null && null
+
+
+*** Error line 17.
+  1 || 2;
+    ^^
+*** Incompatible operands: int || int
+
+
+*** Error line 18.
+  1.0 || 2.0;
+      ^^
+*** Incompatible operands: double || double
+
+
+*** Error line 19.
+  betsy || betsy;
+        ^^
+*** Incompatible operands: Cow || Cow
+
+
+*** Error line 20.
+  null || null;
+       ^^
+*** Incompatible operands: null || null
+

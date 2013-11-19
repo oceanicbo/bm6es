@@ -1,0 +1,12 @@
+
+*** Error line 10.
+		this.global = 10; 
+                     ^^^^^^
+*** Cow has no such field 'global'
+
+
+*** Error line 17.
+	c.gFn(); 
+          ^^^
+*** Cow has no such field 'gFn'
+

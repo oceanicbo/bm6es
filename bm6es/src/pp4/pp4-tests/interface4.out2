@@ -1,0 +1,11 @@
+
+*** Error line 1.
+interface Winky { int MethodA(); }
+          
+*** Class 'Inky' does not implement entire interface 'Winky'
+
+*** Error line 2.
+interface Binky { void MethodB();}
+          
+*** Class 'Inky' does not implement entire interface 'Binky'
+

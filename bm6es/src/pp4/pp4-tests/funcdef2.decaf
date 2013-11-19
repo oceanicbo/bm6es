@@ -1,0 +1,8 @@
+void foo(int a)
+{
+
+    bool a;
+    a = false;
+
+}
+void main() {}

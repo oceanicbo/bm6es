@@ -1,0 +1,15 @@
+
+
+class Philip{
+  int SUID;
+
+}
+
+
+class Marc extends Philip{
+   int SUID;
+
+}
+
+void main() {}
+

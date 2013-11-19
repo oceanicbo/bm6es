@@ -1,0 +1,14 @@
+class Animal {}
+class Cow extends Animal {}
+class Pig extends Animal {}
+
+
+void main()
+{
+  Cow betsy;
+  Pig wilbur;
+  Animal fred;
+
+  betsy = wilbur;
+  betsy = fred;
+}

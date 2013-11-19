@@ -1,0 +1,18 @@
+
+*** Error line 3.
+  unknown = 10;
+  ^^^^^^^
+*** No declaration found for variable 'unknown'
+
+
+*** Error line 4.
+  missing[10] = 0;
+  ^^^^^^^
+*** No declaration found for variable 'missing'
+
+
+*** Error line 5.
+  notdeclared.field;
+  ^^^^^^^^^^^
+*** No declaration found for variable 'notdeclared'
+

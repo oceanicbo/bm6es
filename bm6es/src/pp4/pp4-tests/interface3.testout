@@ -1,0 +1,6 @@
+
+*** Error line 3.
+class Binky implements Winky {int MethodA() { return 1;} bool MethodC() { return true;}}
+                       ^^^^^
+*** Class 'Binky' does not implement entire interface 'Winky'
+

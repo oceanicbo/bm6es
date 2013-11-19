@@ -1,0 +1,12 @@
+
+*** Error line 4.
+  NewArray(5.0, int);
+           ^^^
+*** Size for NewArray must be an integer
+
+
+*** Error line 6.
+  NewArray(5, Unknown); 
+              ^^^^^^^
+*** No declaration found for type 'Unknown'
+

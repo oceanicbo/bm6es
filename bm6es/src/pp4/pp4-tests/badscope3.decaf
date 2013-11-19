@@ -1,0 +1,16 @@
+
+class Turnip {
+
+    void Plant() {}
+    void Plant(int a, double b) {}
+
+    void Grow(int a) {}
+       // still error, even if same type signature
+    void Grow(int b) {} 
+
+	int num;
+    int num;
+}
+
+void main() {}
+

@@ -1,0 +1,13 @@
+class Cow {}
+int function() { return 1;}
+
+void main()
+{
+  bool a;
+  Cow betsy;
+
+  a + a;
+  betsy + betsy;
+  function + 2;
+  -a;
+}

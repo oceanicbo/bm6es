@@ -1,0 +1,24 @@
+class Animal {}
+
+class Cow extends Animal {}
+
+void Pet(Animal winky) {}
+
+Animal GetAnimal()
+{
+  Cow foo;
+
+  return foo;
+}
+
+
+void main()
+{
+  Cow betsy;
+  Animal foo;
+
+  foo = betsy;
+
+  Pet(betsy);
+}
+

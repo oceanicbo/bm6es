@@ -1,0 +1,11 @@
+class Cow {}
+
+Cow Milk(Cow other) { return null; }
+
+void main()
+{
+  Cow betsy;
+
+  betsy = null;
+  Milk(null);
+}

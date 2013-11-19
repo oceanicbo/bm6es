@@ -1,0 +1,12 @@
+class Vegetable {
+  int stalk;
+  void root() { }
+}
+
+class Potato extends Vegetable {
+  bool root;
+  void stalk() {}
+}
+
+void main() {}
+

@@ -1,0 +1,7 @@
+void main()
+{
+	bool[] arr;
+	int[] arr2;
+	int a;
+	a = arr.length() + arr2.length();
+}

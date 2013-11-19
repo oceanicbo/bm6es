@@ -1,0 +1,6 @@
+
+*** Error line 2.
+class Binky extends Winky {}
+                    ^^^^^
+*** No declaration found for class 'Winky'
+

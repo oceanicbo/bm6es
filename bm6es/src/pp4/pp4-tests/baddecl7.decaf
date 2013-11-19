@@ -1,0 +1,3 @@
+class Binky {}
+class Winky implements Binky {}
+void main() {}

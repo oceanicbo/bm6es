@@ -1,0 +1,12 @@
+interface Winky {
+	int MethodA();
+	void MethodB(int a);
+	bool MethodC();
+}
+
+class Binky implements Winky {
+	int MethodA() { return 1;}
+	void MethodB(int a) {}
+	bool MethodC() { return true;}
+}
+void main() {}

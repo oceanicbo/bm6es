@@ -1,0 +1,24 @@
+
+*** Error line 6.
+  Print(1.0);
+        ^^^
+*** Incompatible argument 1: double given, int/bool/string expected
+
+
+*** Error line 7.
+  Print(arr);
+        ^^^
+*** Incompatible argument 1: int[] given, int/bool/string expected
+
+
+*** Error line 8.
+  Print(Binky());
+        ^^^^^^^
+*** Incompatible argument 1: void given, int/bool/string expected
+
+
+*** Error line 9.
+  Print(1, "string", 1.0, 3);
+                     ^^^
+*** Incompatible argument 3: double given, int/bool/string expected
+

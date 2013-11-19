@@ -1,0 +1,12 @@
+
+*** Error line 5.
+    b.Moo;
+      ^^^
+*** Cow has no such field 'Moo'
+
+
+*** Error line 6.
+    b.a();
+      ^
+*** Cow has no such field 'a'
+

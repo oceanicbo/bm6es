@@ -1,0 +1,122 @@
+Arguing for pp4-test:
+
+Results for sample files
+bad10 FAIL  // deep field check after unknown class has been reported 
+// has been change to same in this submitted edition
+>>>*** Error line 6.
+>>>g.GetColor(10);
+     ^^^^^^^^
+>>>*** Unknown has no such field 'GetColor'
+
+array9 FAIL
+
+baddecl2 FAIL 
+
+badoverride2 FAIL  //different description of redeclared error.
+< *** Declaration of 'root' here conflicts with declaration on line 3
+---
+> *** Method 'root' must match inherited type signature
+
+cascade1 FAIL
+
+cascade3 FAIL // deep field check after undeclared subscript has been reported 
+// has been change to same in this submitted edition
+> *** Array subscript must be an integer
+> 
+> 
+> *** Error line 14.
+>   d = arr[n]; 
+
+cascade5 FAIL // after No declaration found for variable 'missing'
+// check again for legal subscript symbols for arrays
+// has been change to same in this submitted edition
+> *** Error line 4.
+>   missing[10] = 0;
+>   ^^^^^^^
+> *** [] can only be applied to arrays
+//  deep field check after undeclared class has been reported 
+> *** Error line 5.
+>   notdeclared.field;
+>               ^^^^^
+> *** error has no such field 'field'
+
+cascade7 FAIL // deep check same as before
+// has been change to same in this submitted edition
+> *** Error line 4.
+>   NewArray(a, bool);
+>            ^
+> *** Size for NewArray must be an integer
+
+class13 FAIL
+
+class4 FAIL // due to bison version 
+< *** parse error
+---
+> *** syntax error
+
+context FAIL
+//has been passed "return" without parameter in this edition
+
+funcall9 FAIL
+
+funcdef4 FAIL
+
+interface4 FAIL
+
+obscure2 FAIL
+
+obscure3 FAIL/SIG FAULT
+
+obscure5 FAIL // different error description &
+// deep field check again
+> *** Error line 6.
+>      a.b;    // a is itself undeclared, so no complaint about the .b
+>        ^
+> *** error field 'b' only accessible within class scope
+> 
+> 
+23c29,35
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 8.
+>      d.b.c;  // d has no field b, so no complaint about the .c after it
+>          ^
+> *** Unknown has no such field 'c'
+29c41,53
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 9.
+>      d.b.c(); // same as above
+>          ^
+> *** Unknown has no such field 'c'
+> 
+> 
+> *** Error line 10.
+>      b.c;   // b is an unknown class
+>        ^
+> *** Unknown has no such field 'c'
+
+var3 FAIL
+
+var4 FAIL // deep check in operands and Do's parameter
+> 
+> *** Error line 18.
+>      var = "bark";
+>          ^
+> *** Incompatible operands: int = string
+> 
+> 
+> *** Error line 19.
+> 	Do(3);
+>         ^^
+> *** Function 'Do' expects 0 arguments but 1 given
+> 
+
+Test Results: 89/107
+

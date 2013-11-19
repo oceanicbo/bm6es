@@ -1,0 +1,6 @@
+
+*** Error line 13.
+   b.field1;
+     ^^^^^^
+*** Cow field 'field1' only accessible within class scope
+

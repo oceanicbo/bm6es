@@ -1,0 +1,10 @@
+Unknown gVar;
+
+void main()
+{
+	Missing local;
+}
+
+class Binky {
+   Gone g;
+}

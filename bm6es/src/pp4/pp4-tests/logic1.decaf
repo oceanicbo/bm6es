@@ -1,0 +1,9 @@
+void main()
+{
+  !false;
+  !true;
+
+  false && true;
+  false || true;
+}
+

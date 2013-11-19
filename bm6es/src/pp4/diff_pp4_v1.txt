@@ -1,0 +1,221 @@
+do something with pp4-tests/arith1.decaf
+do something with pp4-tests/arith2.decaf
+do something with pp4-tests/array10.decaf
+do something with pp4-tests/array11.decaf
+do something with pp4-tests/array1.decaf
+do something with pp4-tests/array2.decaf
+do something with pp4-tests/array3.decaf
+do something with pp4-tests/array4.decaf
+do something with pp4-tests/array5.decaf
+do something with pp4-tests/array6.decaf
+do something with pp4-tests/array7.decaf
+do something with pp4-tests/array8.decaf
+do something with pp4-tests/array9.decaf
+7,12d6
+< 
+< *** Error line 13.
+<      arr.length(10);
+<          ^^^^^^
+< *** Function 'length' expects 0 arguments but 1 given
+< 
+do something with pp4-tests/assign2.decaf
+do something with pp4-tests/assign3.decaf
+do something with pp4-tests/assign4.decaf
+do something with pp4-tests/assign5.decaf
+do something with pp4-tests/assign6.decaf
+do something with pp4-tests/baddecl1.decaf
+do something with pp4-tests/baddecl2.decaf
+2,7d1
+< *** Error line 1.
+< Unknown function1() {}
+< ^^^^^^^
+< *** No declaration found for type 'Unknown'
+< 
+< 
+do something with pp4-tests/baddecl3.decaf
+do something with pp4-tests/baddecl4.decaf
+do something with pp4-tests/baddecl5.decaf
+do something with pp4-tests/baddecl6.decaf
+do something with pp4-tests/baddecl7.decaf
+do something with pp4-tests/baddecl8.decaf
+do something with pp4-tests/badoverride1.decaf
+do something with pp4-tests/badoverride2.decaf
+5c5
+< *** Declaration of 'root' here conflicts with declaration on line 3
+---
+> *** Method 'root' must match inherited type signature
+do something with pp4-tests/badoverride3.decaf
+2,7d1
+< *** Error line 7.
+< 	bool IsRipe(int weight, double weather) { return false;}
+<              ^^^^^^
+< *** Method 'IsRipe' must match inherited type signature
+< 
+< 
+11a6,11
+> 
+> 
+> *** Error line 7.
+> 	bool IsRipe(int weight, double weather) { return false;}
+>              ^^^^^^
+> *** Method 'IsRipe' must match inherited type signature
+do something with pp4-tests/badoverride4.decaf
+do something with pp4-tests/badoverride5.decaf
+do something with pp4-tests/badoverride6.decaf
+do something with pp4-tests/badscope1.decaf
+do something with pp4-tests/badscope2.decaf
+do something with pp4-tests/badscope3.decaf
+do something with pp4-tests/badscope4.decaf
+do something with pp4-tests/badscope5.decaf
+do something with pp4-tests/badscope6.decaf
+do something with pp4-tests/badscope7.decaf
+do something with pp4-tests/blackjack.decaf
+do something with pp4-tests/break1.decaf
+do something with pp4-tests/break2.decaf
+do something with pp4-tests/break3.decaf
+do something with pp4-tests/c3.decaf
+do something with pp4-tests/cascade1.decaf
+do something with pp4-tests/cascade2.decaf
+do something with pp4-tests/cascade3.decaf
+do something with pp4-tests/cascade5.decaf
+do something with pp4-tests/cascade7.decaf
+do something with pp4-tests/cascade8.decaf
+do something with pp4-tests/class12.decaf
+do something with pp4-tests/class13.decaf
+5,11c5
+< *** Cow has no such field 'Moo'
+< 
+< 
+< *** Error line 6.
+<     b.a();
+<       ^
+< *** Cow has no such field 'a'
+---
+> *** Cow field 'Moo' only accessible within class scope
+do something with pp4-tests/class1.decaf
+do something with pp4-tests/class2.decaf
+do something with pp4-tests/class3.decaf
+do something with pp4-tests/class4.decaf
+5c5
+< *** parse error
+---
+> *** syntax error
+do something with pp4-tests/class5.decaf
+do something with pp4-tests/class6.decaf
+do something with pp4-tests/class7.decaf
+do something with pp4-tests/class8.decaf
+do something with pp4-tests/class9.decaf
+do something with pp4-tests/compat1.decaf
+do something with pp4-tests/compat2.decaf
+do something with pp4-tests/compat3.decaf
+do something with pp4-tests/compat4.decaf
+do something with pp4-tests/compat5.decaf
+do something with pp4-tests/context.decaf
+do something with pp4-tests/funcall1.decaf
+do something with pp4-tests/funcall2.decaf
+do something with pp4-tests/funcall3.decaf
+do something with pp4-tests/funcall4.decaf
+do something with pp4-tests/funcall5.decaf
+do something with pp4-tests/funcall6.decaf
+do something with pp4-tests/funcall8.decaf
+do something with pp4-tests/funcall9.decaf
+7,12d6
+< 
+< *** Error line 5.
+<   b();
+<   ^
+< *** No declaration found for function 'b'
+< 
+do something with pp4-tests/funcdef1.decaf
+do something with pp4-tests/funcdef2.decaf
+do something with pp4-tests/funcdef3.decaf
+do something with pp4-tests/funcdef4.decaf
+do something with pp4-tests/funcdef5.decaf
+do something with pp4-tests/interface1.decaf
+do something with pp4-tests/interface2.decaf
+do something with pp4-tests/interface3.decaf
+do something with pp4-tests/interface4.decaf
+7,12d6
+< 
+< *** Error line 4.
+< class Inky implements Winky, Binky {}
+<                              ^^^^^
+< *** Class 'Inky' does not implement entire interface 'Binky'
+< 
+do something with pp4-tests/interface5.decaf
+do something with pp4-tests/interface6.decaf
+do something with pp4-tests/io1.decaf
+do something with pp4-tests/io2.decaf
+do something with pp4-tests/io3.decaf
+do something with pp4-tests/logic1.decaf
+do something with pp4-tests/logic2.decaf
+do something with pp4-tests/logic3.decaf
+do something with pp4-tests/logic4.decaf
+do something with pp4-tests/new.decaf
+do something with pp4-tests/obscure2.decaf
+73a74,79
+> *** Error line 24.
+>     Animal.Eat();     // and what about this?
+>            ^^^
+> *** error has no such field 'Eat'
+> 
+> 
+do something with pp4-tests/obscure3.decaf
+do something with pp4-tests/obscure4.decaf
+do something with pp4-tests/obscure5.decaf
+23c23,29
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 8.
+>      d.b.c;  // d has no field b, so no complaint about the .c after it
+>          ^
+> *** Unknown has no such field 'c'
+29c35,41
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 10.
+>      b.c;   // b is an unknown class
+>        ^
+> *** Unknown has no such field 'c'
+do something with pp4-tests/relate1.decaf
+do something with pp4-tests/relate2.decaf
+do something with pp4-tests/relate3.decaf
+do something with pp4-tests/relate4.decaf
+do something with pp4-tests/relate5.decaf
+do something with pp4-tests/return.decaf
+do something with pp4-tests/var1.decaf
+do something with pp4-tests/var2.decaf
+do something with pp4-tests/var3.decaf
+1,12d0
+< 
+< *** Error line 10.
+< 		this.global = 10; 
+<                      ^^^^^^
+< *** Cow has no such field 'global'
+< 
+< 
+< *** Error line 17.
+< 	c.gFn(); 
+<           ^^^
+< *** Cow has no such field 'gFn'
+< 
+do something with pp4-tests/var4.decaf
+0a1,12
+> 
+> *** Error line 18.
+>      var = "bark";
+>          ^
+> *** Incompatible operands: int = string
+> 
+> 
+> *** Error line 19.
+> 	Do(3);
+>         ^^
+> *** Function 'Do' expects 0 arguments but 1 given
+> 

@@ -1,0 +1,72 @@
+
+*** Error line 12.
+  true < false;
+       ^
+*** Incompatible operands: bool < bool
+
+
+*** Error line 13.
+  true > false;
+       ^
+*** Incompatible operands: bool > bool
+
+
+*** Error line 14.
+  true <= false;
+       ^^
+*** Incompatible operands: bool <= bool
+
+
+*** Error line 15.
+  true >= false;
+       ^^
+*** Incompatible operands: bool >= bool
+
+
+*** Error line 17.
+  betsy < betsy;
+        ^
+*** Incompatible operands: Cow < Cow
+
+
+*** Error line 18.
+  betsy > betsy;
+        ^
+*** Incompatible operands: Cow > Cow
+
+
+*** Error line 19.
+  betsy <= betsy;
+        ^^
+*** Incompatible operands: Cow <= Cow
+
+
+*** Error line 20.
+  betsy >= betsy;
+        ^^
+*** Incompatible operands: Cow >= Cow
+
+
+*** Error line 22.
+  betsy < mammal;
+        ^
+*** Incompatible operands: Cow < Animal
+
+
+*** Error line 23.
+  betsy > mammal;
+        ^
+*** Incompatible operands: Cow > Animal
+
+
+*** Error line 24.
+  betsy <= mammal;
+        ^^
+*** Incompatible operands: Cow <= Animal
+
+
+*** Error line 25.
+  betsy >= mammal;
+        ^^
+*** Incompatible operands: Cow >= Animal
+

@@ -1,0 +1,30 @@
+
+*** Error line 5.
+    Unknown b;
+    ^^^^^^^
+*** No declaration found for type 'Unknown'
+
+
+*** Error line 6.
+     a.b;    // a is itself undeclared, so no complaint about the .b
+     ^
+*** No declaration found for variable 'a'
+
+
+*** Error line 7.
+     a.b();  // same as above
+     ^
+*** No declaration found for variable 'a'
+
+
+*** Error line 8.
+     d.b.c;  // d has no field b, so no complaint about the .c after it
+       ^
+*** Binky has no such field 'b'
+
+
+*** Error line 9.
+     d.b.c(); // same as above
+       ^
+*** Binky has no such field 'b'
+

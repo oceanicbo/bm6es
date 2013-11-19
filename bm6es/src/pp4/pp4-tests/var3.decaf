@@ -1,0 +1,18 @@
+// this is here to test that look up name will not find name, even
+// if in global because of class scope
+int global;
+void gFn() {}
+
+class Cow {
+
+	void moo() {
+            	// should fail
+		this.global = 10; 
+	}
+}
+void main()
+{
+	Cow c;
+           // should fail
+	c.gFn(); 
+}

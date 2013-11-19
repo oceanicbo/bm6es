@@ -1,0 +1,26 @@
+// We probably don't want to use this file for testing, but it does
+// go for some weird cases
+
+void Binky() {}
+void Winky() {}
+class Animal { int x; void Eat() { } }
+
+void main()
+{
+    Animal zebra;
+
+    Binky = Winky;    // this will fail, Binky not L-value
+    Binky == Winky;   // both function type?
+    Binky > Winky;    // definitely not okay
+
+    // This set requires special handling for class name used as
+    // LValue/Expr. Maybe it should just act as though undeclared?
+    // We should not test their stuff on this
+
+    zebra == Animal;  // should not be okay
+    zebra = Animal;   // should not be okay
+    Animal = zebra;   // should not be okay
+    Animal = Animal;  // should not be okay
+    Animal.Eat();     // and what about this?
+    Animal.x =10;     // not okay either
+}

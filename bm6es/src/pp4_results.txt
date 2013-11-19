@@ -1,0 +1,336 @@
+bison -dvty parser.y
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o y.tab.o y.tab.c
+flex -d scanner.l
+g++ -g  -Wall -Wno-unused -Wno-sign-compare    -c -o lex.yy.o lex.yy.c
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o ast.o ast.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o ast_decl.o ast_decl.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o ast_expr.o ast_expr.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o ast_stmt.o ast_stmt.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o ast_type.o ast_type.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o errors.o errors.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o utility.o utility.cc
+g++ -g  -Wall -Wno-unused -Wno-sign-compare  -c -o main.o main.cc
+g++ -o dcc y.tab.o lex.yy.o  ast.o  ast_decl.o  ast_expr.o  ast_stmt.o  ast_type.o  errors.o  utility.o  main.o  -lc -lm -lfl
+Results for sample files
+bad10 FAIL  // deep field check after unknown class has been reported 
+// has been change to same in this submitted edition
+>>>*** Error line 6.
+>>>g.GetColor(10);
+     ^^^^^^^^
+>>>*** Unknown has no such field 'GetColor'
+bad11 PASS
+bad12 PASS
+bad1 PASS
+bad2 PASS
+bad3 PASS
+bad4 PASS
+bad5 PASS
+bad6 PASS
+bad7 PASS
+bad8 PASS
+bad9 PASS
+matrix PASS
+new PASS
+queue PASS
+stack PASS
+t10 PASS
+t12 PASS
+t13 PASS
+t1 PASS
+t2 PASS
+t3 PASS
+t4 PASS
+t5 PASS
+t6 PASS
+t7 PASS
+t9 PASS
+Sample Results: 26/27
+Results for test files
+arith1 PASS
+arith1.decaf; 1; should accept +,-,*,/,% on numbers (both int or both double or single int/double for unary minus);
+arith2 PASS
+arith2.decaf; 1; should report error on +,-,*,/ applied to non-numbers (strings, classes, functions, etc) ; 
+array10 PASS
+
+array11 PASS
+array11.decaf; 1; should accept array element as instance of base type;
+array1 PASS
+array1.decaf; 1; should accept correctly formed call to NewArray;
+array2 PASS
+array2.decaf; 1; should report error on attempt to assign NewArray result to incompatible variable; 
+array3 PASS
+array3.decaf; 1; should report error on incorrect args to NewArray (non-int length, element type void or undefined class); 
+array4 PASS
+array4.decaf; 1; should accept integer as array subscript on both single and multi-dim array;
+array5 PASS
+array5.decaf; 1; should report error on non-integer as array subscript; 
+array6 PASS
+array6.decaf; 1; should report error on attempt to apply subscript to non-array; 
+array7 PASS
+array7.decaf; 1; should accept correct assignment of arrays (including multi-dim);
+array8 PASS
+array8.decaf; 1; should accept .length() correctly applied to array and result is int type;
+array9 FAIL
+array9.decaf; 1; should report error on incorrect use of .length (e.g. w/o parens, with args, applied to non-array, etc); 
+assign2 PASS
+assign2.decaf; 1; should accept assignment to base type from appropriate constant (int/double/bool/string);
+assign3 PASS
+assign3.decaf; 1; should report error on incompatible assignment (e.g. int = string); 
+assign4 PASS
+assign4.decaf; 1; should report error on attempt to assign to variable in closed scope; 
+assign5 PASS
+assign5.decaf; 1; should report error on attempt to assign to function; 
+assign6 PASS
+assign6.decaf; 1; should accept use of assignment expression;
+baddecl1 PASS
+baddecl1.decaf; 1; global/local/instance variable of undeclared class type should be error; 
+baddecl2 FAIL 
+baddecl2.decaf; 1; function parameter/return type of undeclared class type should be error; 
+baddecl3 PASS
+baddecl3.decaf; 1; extends from undeclared class should be error;
+baddecl4 PASS
+baddecl4.decaf; 1; implements undeclared interface should be error;
+baddecl5 PASS
+baddecl5.decaf; 1; array variable of undeclared class element type should be error;
+baddecl6 PASS
+baddecl6.decaf; 1; extends from interface type should be error;
+baddecl7 PASS
+baddecl7.decaf; 1; implements class type should be error;
+baddecl8 PASS
+baddecl8.decaf; 1; use of declared variable/function as if class/interface type should be error;
+badoverride1 PASS
+badoverride1.decaf; 1; redefinition of an inherited instance variable in a subclass should be reported as conflict; 
+badoverride2 FAIL  //different description of redeclared error.
+< *** Declaration of 'root' here conflicts with declaration on line 3
+---
+> *** Method 'root' must match inherited type signature
+badoverride2.decaf; 1; re-use of method as variable (or vice versa) from parent to subclass should be reported as conflict; 
+badoverride3 PASS
+badoverride3.decaf; 1; subclass override with fewer parameters than inherited should be reported as conflict; 
+badoverride4 PASS
+badoverride4.decaf; 1; subclass override which differs in param types than inherited should be reported as conflict; 
+badoverride5 PASS
+badoverride5.decaf; 1; subclass override which differs in return type from inherited should be reported as conflict; 
+badoverride6 PASS
+badoverride6.decaf; 1; subclass override which differs in array param/return types from inherited should be reported as conflict; 
+badscope1 PASS
+badscope1.decaf; 1; two variables in same scope with same name should be reported as conflict; 
+badscope2 PASS
+badscope2.decaf; 1; two global functions with same name should be reported as conflict; 
+badscope3 PASS
+badscope3.decaf; 1; two variables/methods in a class with same name should be reported as conflict; 
+badscope4 PASS
+badscope4.decaf; 1; two function parameters with same name should be reported as conflict; 
+badscope5 PASS
+badscope5.decaf; 1; two classes with same name should be reported as conflict; 
+badscope6 PASS
+badscope6.decaf; 1; two interfaces with same name should be reported as conflict; 
+badscope7 PASS
+badscope7.decaf; 1; two global variable/function/class/interfaces with same name should be reported as conflict; 
+blackjack PASS
+
+break1 PASS
+break1.decaf; 1; should accept break inside for/while loop;
+break2 PASS
+break2.decaf; 1; should report error on break outside for/while loop; 
+break3 PASS
+break3.decaf; 1; should accept break inside nested for/while loop;
+c3 PASS
+logic3.decaf; 1; should accept any boolean in test of if/while/for;
+cascade1 FAIL
+#cascade1.decaf; 1; should not re-report already reported errors in expressions; 
+cascade2 PASS
+#cascade2.decaf; 1; should not re-report already reported errors in parameters/call/return; 
+cascade3 FAIL // deep field check after undeclared subscript has been reported 
+// has been change to same in this submitted edition
+> *** Array subscript must be an integer
+> 
+> 
+> *** Error line 14.
+>   d = arr[n]; 
+#cascade3.decaf; 1; should not re-report already reported errors for arrays (e.g. arr[error]); 
+cascade5 FAIL // after No declaration found for variable 'missing'
+// check again for legal subscript symbols for arrays
+// has been change to same in this submitted edition
+> *** Error line 4.
+>   missing[10] = 0;
+>   ^^^^^^^
+> *** [] can only be applied to arrays
+//  deep field check after undeclared class has been reported 
+> *** Error line 5.
+>   notdeclared.field;
+>               ^^^^^
+> *** error has no such field 'field'
+#cascade5.decaf; 1; should not re-report already reported errors for undeclared variables (undeclared[0] = 10, etc); 
+cascade7 FAIL // deep check same as before
+// has been change to same in this submitted edition
+> *** Error line 4.
+>   NewArray(a, bool);
+>            ^
+> *** Size for NewArray must be an integer
+#cascade7.decaf; 1; should not re-report already reported errors in statements (e.g. Print(error), NewArray(error, int), if (error)); 
+cascade8 PASS
+#cascade8.decaf; 1; should not suppress unrelated errors (each distinct error reported separately, e.g. wrong arg and wrong return from NewArray);
+class12 PASS
+class13 FAIL
+#class13.decaf;0; use of ivar as method & vice versa (this isn't really so obscure, but everyone reports is a different way and that's a hassle;
+class1 PASS
+class1.decaf; 1; should accept correct access of fields within class scope (with/without this.);
+class2 PASS
+class2.decaf; 1; should accept correct access of inherited fields within class scope (with/without this.);
+class3 PASS
+class3.decaf; 1; should accept correct use of this inside class scope and report error outside; 
+class4 FAIL // due to bison version 
+< *** parse error
+---
+> *** syntax error
+class4.decaf; 1; should report error on attempt to access non-existent class field (variable or method); 
+class5 PASS
+class5.decaf; 1; should report error on attempt to access private variable outside class scope; 
+class6 PASS
+class6.decaf; 1; should accept correct call to method/inherited method ouside class scope;
+class7 PASS
+class7.decaf; 1; should accept proper call to New;
+class8 PASS
+class8.decaf; 1; should report error on attempt to call New of undeclared class; 
+class9 PASS
+class9.decaf; 1; should report error on attempt to access field (variable or method) from non-class type; 
+compat1 PASS
+compat1.decaf; 1; should report error on assignment between incompatible objects or illegal object downcast; 
+compat2 PASS
+compat2.decaf; 1; should accept correct object upcast to parent in assignment, parameter passing, and function return;
+compat3 PASS
+compat3.decaf; 1; should accept null in place of object (assignment, parameter passing, and function return);
+compat4 PASS
+compat4.decaf; 1; should accept correct assignment of objects;
+compat5 PASS
+compat5.decaf; 1; should accept object upcast to interface in assignment, parameter passing, and function return;
+context FAIL
+//has been passed "return" without parameter in this edition
+context.decaf; 1; errors should give appropriate context (line num, location for identifier, errors generally reported in lexical order, etc.);
+funcall1 PASS
+
+funcall2 PASS
+funcall2.decaf; 1; should report error on wrong number of arguments in call; 
+funcall3 PASS
+funcall3.decaf; 1; should report error on wrong type of argument in call; 
+funcall4 PASS
+funcall4.decaf; 1; should accept proper call to function defined later in file;
+funcall5 PASS
+funcall5.decaf; 1; should accept correct use of function call result;
+funcall6 PASS
+funcall6.decaf; 1; should report error on incompatible use of function call result; 
+funcall8 PASS
+funcall8.decaf; 1; should report error on attempt to use return from call to void function; 
+funcall9 FAIL
+funcall9.decaf; 1; should report error on attempt to call undeclared function or call variable as if function; 
+funcdef1 PASS
+funcdef1.decaf; 1; should accept function with parameters of all base types;
+funcdef2 PASS
+funcdef2.decaf; 1; should accept shadowing of parameters in function body (and use innermost type for checking in that context);
+funcdef3 PASS
+funcdef3.decaf; 1; should report error on function return of incompatible type; 
+funcdef4 FAIL
+funcdef4.decaf; 1; should report error on attempt to return value from void function and vice versa; 
+funcdef5 PASS
+funcdef5.decaf; 1; should correctly handle calls to recursive function; 
+interface1 PASS
+interface1.decaf; 1; should accept class with proper implementation of declared inteface;
+interface2 PASS
+interface2.decaf; 1; should accept class implementing interface declared later in file;
+interface3 PASS
+interface3.decaf; 1; should report error when class fails to implement all methods in interface; 
+interface4 FAIL
+interface4.decaf; 1; should report error for each distinct interface that a class fails to implement; 
+interface5 PASS
+interface5.decaf; 1; should accept correct interface method call on object of interface type;
+interface6 PASS
+interface6.decaf; 1; should report error for incorrect method call on object of interface type;
+io1 PASS
+io1.decaf; 1; should accept bool/int/string args to Print;
+io2 PASS
+io2.decaf; 1; should report error on Print of non-bool/int/string (e.g. doubles, arrays, void, etc); 
+io3 PASS
+io3.decaf; 1; should correctly handle result types from ReadInteger/ReadLine; 
+logic1 PASS
+logic1.decaf; 1; should accept &&,||,! applied to booleans;
+logic2 PASS
+logic2.decaf; 1; should report error on &&,||,! applied to non-booleans; 
+logic3 PASS
+logic3.decaf; 1; should accept any boolean in test of if/while/for;
+logic4 PASS
+logic4.decaf; 1; should report error on non-boolean in test of if/while/for; 
+obscure2 FAIL
+#obscure2.decaf; 0; should report error on use of classname as if instance;
+obscure3 FAIL/SIG FAULT
+#obscure3.decaf; 0; class that extends from itself;
+obscure4 PASS
+#obscure4.decaf; 0; function that returns void return call to fn return void;
+obscure5 FAIL // different error description &
+// deep field check again
+> *** Error line 6.
+>      a.b;    // a is itself undeclared, so no complaint about the .b
+>        ^
+> *** error field 'b' only accessible within class scope
+> 
+> 
+23c29,35
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 8.
+>      d.b.c;  // d has no field b, so no complaint about the .c after it
+>          ^
+> *** Unknown has no such field 'c'
+29c41,53
+< *** Binky has no such field 'b'
+---
+> *** Binky field 'b' only accessible within class scope
+> 
+> 
+> *** Error line 9.
+>      d.b.c(); // same as above
+>          ^
+> *** Unknown has no such field 'c'
+> 
+> 
+> *** Error line 10.
+>      b.c;   // b is an unknown class
+>        ^
+> *** Unknown has no such field 'c'
+#obscure5.decaf; 0; should not re-report already reported errors in field access (e.g. errorType.field);
+relate1 PASS
+relate1.decaf; 1; should accept ==/!= applied to 2 compatible operands (e.g. both ints, strings, arrays, objects/null);
+relate2 PASS
+relate2.decaf; 1; should report error on ==/!= applied to 2 incompatible operands (e.g. int == bool and so on); 
+relate3 PASS
+relate3.decaf; 1; should accept relational ops on numbers (both int or both double);
+relate4 PASS
+relate4.decaf; 1; should report error on relational ops applied to incompatible types (e.g. int < double); 
+relate5 PASS
+relate5.decaf; 1; should report error on relational ops applied to non-numbers (objects, bools, strings, etc); 
+return PASS
+
+var1 PASS
+var1.decaf; 1; global variables should be accessible everywhere (inside function, blocks, classes, etc.); 
+var2 PASS
+var2.decaf; 1; locals and instance variables should shadow global variable of same name; 
+var3 FAIL
+var3.decaf;1; should report error accessing globals as though class field; 
+var4 FAIL // deep check in operands and Do's parameter
+> 
+> *** Error line 18.
+>      var = "bark";
+>          ^
+> *** Incompatible operands: int = string
+> 
+> 
+> *** Error line 19.
+> 	Do(3);
+>         ^^
+> *** Function 'Do' expects 0 arguments but 1 given
+> 
+var4.decaf; 1; inherited ivar should shadow global of same name;
+Test Results: 89/107

@@ -1,0 +1,46 @@
+class Animal {}
+class Cow extends Animal {}
+class Pig extends Animal {}
+
+void main()
+{
+  Cow betsy;
+  Animal mammal;
+  Pig wilbur;
+  int[] arr;
+  double[] dArr;
+
+  1 == 2.0;
+  1 != 2.0;
+
+  1 == true;
+  1 != true;
+
+  1 == betsy;
+  1 != betsy;
+
+  1 == null;
+  1 != null;
+
+  2.0 == true;
+  2.0 != true;
+  
+  2.0 == betsy;
+  2.0 != betsy;
+
+  2.0 == null;
+  2.0 != null;
+
+  true == betsy;
+  true != betsy;
+
+  true == null;
+  true != null;
+
+  arr != dArr;
+  arr == betsy;
+  arr != 1;
+
+  wilbur == betsy;
+  betsy != wilbur;
+}

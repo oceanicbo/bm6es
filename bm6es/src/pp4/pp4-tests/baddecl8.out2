@@ -1,0 +1,16 @@
+
+*** Error line 6.
+class A extends function implements gVar {
+                
+*** No declaration found for class 'function'
+
+*** Error line 6.
+class A extends function implements gVar {
+                                    
+*** No declaration found for interface 'gVar'
+
+*** Error line 4.
+gVar strange;
+
+*** No declaration found for variable 'gVar'
+

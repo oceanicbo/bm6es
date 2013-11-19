@@ -1,0 +1,42 @@
+
+*** Error line 8.
+  while(1) {}
+        ^
+*** Test expression must have boolean type
+
+
+*** Error line 9.
+  while(1.0) {}
+        ^^^
+*** Test expression must have boolean type
+
+
+*** Error line 10.
+  while(betsy) {}
+        ^^^^^
+*** Test expression must have boolean type
+
+
+*** Error line 11.
+  while(null) {}
+        ^^^^
+*** Test expression must have boolean type
+
+
+*** Error line 13.
+  if(1) {}
+     ^
+*** Test expression must have boolean type
+
+
+*** Error line 14.
+  if("not") {}
+     ^^^^^
+*** Test expression must have boolean type
+
+
+*** Error line 15.
+  if(arr) {}
+     ^^^
+*** Test expression must have boolean type
+

@@ -1,0 +1,8 @@
+int gVar;
+void function() { }
+
+gVar strange;
+
+class A extends function implements gVar {
+}
+void main() {}

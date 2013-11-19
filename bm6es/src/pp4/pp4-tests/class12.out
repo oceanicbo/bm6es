@@ -1,0 +1,6 @@
+
+*** Error line 3.
+    this;
+    ^^^^
+*** 'this' is only valid within class scope
+

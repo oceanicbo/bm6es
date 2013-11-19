@@ -1,0 +1,10 @@
+void main()
+{
+  while(true)
+  {
+    break;
+  }
+  for (1;true;1) {
+    break;
+  }
+}

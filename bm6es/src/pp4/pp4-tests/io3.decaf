@@ -1,0 +1,12 @@
+void main()
+{
+  int a;
+  double b;
+  string c;
+  double d;
+
+  a = ReadInteger();
+  b = ReadInteger();
+  c = ReadLine();
+  d = ReadLine();
+}

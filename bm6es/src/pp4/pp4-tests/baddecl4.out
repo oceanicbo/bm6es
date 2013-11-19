@@ -1,0 +1,6 @@
+
+*** Error line 1.
+class Binky implements Missing {}
+                       ^^^^^^^
+*** No declaration found for interface 'Missing'
+

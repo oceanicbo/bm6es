@@ -1,0 +1,16 @@
+class Cow {}
+
+void main()
+{
+   Cow betsy;
+   bool[] arr;
+
+  while(1) {}
+  while(1.0) {}
+  while(betsy) {}
+  while(null) {}
+
+  if(1) {}
+  if("not") {}
+  if(arr) {}
+}

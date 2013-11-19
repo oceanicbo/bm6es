@@ -1,0 +1,10 @@
+void foo()
+{
+  return 1;
+}
+
+int bar()
+{
+  return;
+}
+void main() {}

@@ -1,0 +1,11 @@
+class Cow
+{
+  int size;
+}
+
+void main()
+{
+  Cow betsy;
+
+  betsy.size = 4;
+}

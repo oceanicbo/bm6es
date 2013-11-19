@@ -1,0 +1,19 @@
+int getInt() { return 1;}
+double getDouble() { return 1.0;}
+bool getBool() {return true;}
+
+void main()
+{
+  int a;
+  double b;
+  bool c;
+
+  b = getInt();
+  c = getInt();
+
+  a = getDouble();
+  c = getDouble();
+
+  a = getBool();
+  b = getBool();
+}

@@ -1,0 +1,18 @@
+
+*** Error line 5.
+    void Plant(int a, double b) {}
+         ^^^^^
+*** Declaration of 'Plant' here conflicts with declaration on line 4
+
+
+*** Error line 9.
+    void Grow(int b) {} 
+         ^^^^
+*** Declaration of 'Grow' here conflicts with declaration on line 7
+
+
+*** Error line 12.
+    int num;
+        ^^^
+*** Declaration of 'num' here conflicts with declaration on line 11
+

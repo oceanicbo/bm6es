@@ -1,0 +1,7 @@
+void main()
+{
+// error because of non-int number of elems
+  NewArray(5.0, int);
+// error because of undeclared class
+  NewArray(5, Unknown); 
+}

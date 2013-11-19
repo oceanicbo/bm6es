@@ -1,0 +1,15 @@
+class Animal {
+	int field;
+}
+class Cow extends Animal {
+	void Eat() {}
+}
+class Jersey extends Cow {
+	void Moo() {
+		Eat();
+		this.Eat();
+		field = 10;
+		this.field = 10;
+	}
+}
+void main() {}

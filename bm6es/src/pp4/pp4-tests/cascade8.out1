@@ -1,0 +1,12 @@
+
+*** Error line 6.
+    a = NewArray(5.0, double);
+      ^
+*** Incompatible operands: int[] = double[]
+
+
+*** Error line 6.
+    a = NewArray(5.0, double);
+                 ^^^
+*** Size for NewArray must be an integer
+

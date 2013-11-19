@@ -1,0 +1,3 @@
+interface Winky {}
+class Binky extends Winky {}
+void main() {}

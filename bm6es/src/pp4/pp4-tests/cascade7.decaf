@@ -1,0 +1,7 @@
+void main()
+{
+  Print(b);
+  NewArray(a, bool);
+  while(c());
+  if (d) {}
+}

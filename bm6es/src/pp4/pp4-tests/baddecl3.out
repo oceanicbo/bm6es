@@ -1,0 +1,6 @@
+
+*** Error line 1.
+class Binky extends Missing {}
+                    ^^^^^^^
+*** No declaration found for class 'Missing'
+

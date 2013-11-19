@@ -1,0 +1,11 @@
+class X {
+	bool IsRipe() { return true;}
+	void IsNot(string name) {}
+}
+
+class Y extends X {
+	bool IsRipe(int weight, double weather) { return false;}
+	void IsNot() {}
+}
+
+void main() {}

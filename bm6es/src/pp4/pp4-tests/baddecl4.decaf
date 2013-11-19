@@ -1,0 +1,2 @@
+class Binky implements Missing {}
+void main() {}

@@ -1,0 +1,6 @@
+
+*** Error line 9.
+    BadRecur(4);
+    ^^^^^^^^
+*** Function 'BadRecur' expects 2 arguments but 1 given
+

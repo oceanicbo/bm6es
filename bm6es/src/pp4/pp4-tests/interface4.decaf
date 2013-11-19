@@ -1,0 +1,5 @@
+interface Winky { int MethodA(); }
+interface Binky { void MethodB();}
+// all on one line helps errors diff cleanly
+class Inky implements Winky, Binky {}
+void main() {}

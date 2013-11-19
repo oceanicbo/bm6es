@@ -1,0 +1,19 @@
+class Animal
+	{ string Run(string s) { return s; } }
+
+class Cow extends Animal
+	{ int Eat(int a) { return 5;} }
+
+class Jersey extends Cow
+	{ }
+
+void main()
+{
+	Cow c;
+	Jersey j;
+
+	Print(c.Eat(4));
+	Print(c.Run("fast"));
+	Print(j.Eat(3));
+	Print(j.Run("slow"));
+}

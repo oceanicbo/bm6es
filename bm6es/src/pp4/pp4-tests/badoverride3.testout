@@ -1,0 +1,12 @@
+
+*** Error line 8.
+	void IsNot() {}
+             ^^^^^
+*** Method 'IsNot' must match inherited type signature
+
+
+*** Error line 7.
+	bool IsRipe(int weight, double weather) { return false;}
+             ^^^^^^
+*** Method 'IsRipe' must match inherited type signature
+

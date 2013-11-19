@@ -1,0 +1,20 @@
+bool boolFn() { return true; }
+int intFn() { return 2;}
+
+class Cow {
+	void Init() {
+		bool a;
+		int b;
+		a = boolFn();
+		b = intFn();
+	}
+}
+
+void main()
+{
+		bool a;
+		int b;
+		a = boolFn();
+		b = intFn();
+}	
+	

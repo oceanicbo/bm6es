@@ -1,0 +1,9 @@
+
+void main() {
+    Binky(true, 1);
+}
+
+void Binky(bool b, int a)
+{
+
+}

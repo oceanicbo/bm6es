@@ -1,0 +1,18 @@
+
+*** Error line 1.
+Unknown gVar;
+^^^^^^^
+*** No declaration found for type 'Unknown'
+
+
+*** Error line 5.
+	Missing local;
+        ^^^^^^^
+*** No declaration found for type 'Missing'
+
+
+*** Error line 9.
+   Gone g;
+   ^^^^
+*** No declaration found for type 'Gone'
+

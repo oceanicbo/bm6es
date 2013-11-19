@@ -1,0 +1,11 @@
+
+*** Error line 8.
+  void stalk() {}
+       
+*** Declaration of 'stalk' here conflicts with declaration on line 2
+
+*** Error line 7.
+  bool root;
+       
+*** Declaration of 'root' here conflicts with declaration on line 3
+

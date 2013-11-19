@@ -1,0 +1,21 @@
+class Cow {}
+
+void main()
+{
+   Cow betsy;
+
+  !1;
+  !2.0;
+  !betsy;
+  !null; 
+
+  1 && 2;
+  1.0 && 2.0;
+  betsy && betsy;
+  null && null;
+
+  1 || 2;
+  1.0 || 2.0;
+  betsy || betsy;
+  null || null;
+}

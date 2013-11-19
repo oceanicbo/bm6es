@@ -1,0 +1,10 @@
+class Cow {}
+void main()
+{
+  int a;
+  int[] b;
+  Cow c;
+  a[2];
+  b[1][2];
+  c[0];
+}

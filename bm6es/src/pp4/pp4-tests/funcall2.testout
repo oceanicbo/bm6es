@@ -1,0 +1,12 @@
+
+*** Error line 5.
+  foo(1, 2, 3);
+  ^^^
+*** Function 'foo' expects 2 arguments but 3 given
+
+
+*** Error line 6.
+  foo(1);
+  ^^^
+*** Function 'foo' expects 2 arguments but 1 given
+

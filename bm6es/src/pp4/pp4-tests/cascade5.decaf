@@ -1,0 +1,6 @@
+void main()
+{
+  unknown = 10;
+  missing[10] = 0;
+  notdeclared.field;
+}

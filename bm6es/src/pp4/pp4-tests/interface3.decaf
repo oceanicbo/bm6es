@@ -1,0 +1,4 @@
+interface Winky { int MethodA();void MethodB(int a);bool MethodC(); }
+// all on one line helps errors diff cleanly
+class Binky implements Winky {int MethodA() { return 1;} bool MethodC() { return true;}}
+void main() {}

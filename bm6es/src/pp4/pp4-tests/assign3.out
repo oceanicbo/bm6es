@@ -1,0 +1,72 @@
+
+*** Error line 8.
+  a = b;
+    ^
+*** Incompatible operands: int = double
+
+
+*** Error line 9.
+  a = c;
+    ^
+*** Incompatible operands: int = bool
+
+
+*** Error line 10.
+  a = d;
+    ^
+*** Incompatible operands: int = string
+
+
+*** Error line 12.
+  b = a;
+    ^
+*** Incompatible operands: double = int
+
+
+*** Error line 13.
+  b = c;
+    ^
+*** Incompatible operands: double = bool
+
+
+*** Error line 14.
+  b = d;
+    ^
+*** Incompatible operands: double = string
+
+
+*** Error line 16.
+  c = a;
+    ^
+*** Incompatible operands: bool = int
+
+
+*** Error line 17.
+  c = b;
+    ^
+*** Incompatible operands: bool = double
+
+
+*** Error line 18.
+  c = d;
+    ^
+*** Incompatible operands: bool = string
+
+
+*** Error line 20.
+  d = a;
+    ^
+*** Incompatible operands: string = int
+
+
+*** Error line 21.
+  d = b;
+    ^
+*** Incompatible operands: string = double
+
+
+*** Error line 22.
+  d = c;
+    ^
+*** Incompatible operands: string = bool
+

@@ -1,0 +1,7 @@
+class X {
+	void TapDance(int a, string b) {}
+}
+class Y extends X {
+	void TapDance(string a, int b) {}
+}
+void main () {}

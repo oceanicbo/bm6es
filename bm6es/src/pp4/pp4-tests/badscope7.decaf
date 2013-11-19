@@ -1,0 +1,28 @@
+int Parsnip;
+class Parsnip { }
+
+class Carrot { }
+bool Carrot;
+
+void Zucchini() {}
+int[] Zucchini;
+
+bool Onion;
+void Onion() {}
+
+class Turnip {}
+void Turnip() {}
+
+void Potato() {}
+class Potato {}
+
+interface Rutabaga {}
+class Rutabaga {}
+
+void Mushroom() {}
+interface Mushroom {}
+
+void main() {}
+
+
+

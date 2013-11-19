@@ -1,0 +1,12 @@
+
+*** Error line 4.
+void Rutabaga(int a, double b, bool c) {
+     ^^^^^^^^
+*** Declaration of 'Rutabaga' here conflicts with declaration on line 1
+
+
+*** Error line 8.
+int Turnip(int a) { return 1;}
+    ^^^^^^
+*** Declaration of 'Turnip' here conflicts with declaration on line 7
+

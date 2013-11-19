@@ -1,0 +1,78 @@
+
+*** Error line 12.
+    Binky = Winky;    // this will fail, Binky not L-value
+    ^^^^^
+*** No declaration found for variable 'Binky'
+
+
+*** Error line 12.
+    Binky = Winky;    // this will fail, Binky not L-value
+            ^^^^^
+*** No declaration found for variable 'Winky'
+
+
+*** Error line 13.
+    Binky == Winky;   // both function type?
+    ^^^^^
+*** No declaration found for variable 'Binky'
+
+
+*** Error line 13.
+    Binky == Winky;   // both function type?
+             ^^^^^
+*** No declaration found for variable 'Winky'
+
+
+*** Error line 14.
+    Binky > Winky;    // definitely not okay
+    ^^^^^
+*** No declaration found for variable 'Binky'
+
+
+*** Error line 14.
+    Binky > Winky;    // definitely not okay
+            ^^^^^
+*** No declaration found for variable 'Winky'
+
+
+*** Error line 20.
+    zebra == Animal;  // should not be okay
+             ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 21.
+    zebra = Animal;   // should not be okay
+            ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 22.
+    Animal = zebra;   // should not be okay
+    ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 23.
+    Animal = Animal;  // should not be okay
+    ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 23.
+    Animal = Animal;  // should not be okay
+             ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 24.
+    Animal.Eat();     // and what about this?
+    ^^^^^^
+*** No declaration found for variable 'Animal'
+
+
+*** Error line 25.
+    Animal.x =10;     // not okay either
+    ^^^^^^
+*** No declaration found for variable 'Animal'
+

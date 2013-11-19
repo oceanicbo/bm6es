@@ -1,0 +1,6 @@
+
+*** Error line 4.
+void main(int a, double a){
+                        ^
+*** Declaration of 'a' here conflicts with declaration on line 4
+

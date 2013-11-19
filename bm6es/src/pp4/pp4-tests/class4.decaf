@@ -1,0 +1,8 @@
+class Cow {
+	void Eat() { this.a = 10;}
+
+void main()
+{
+    Cow c;
+    c.Moo();
+}

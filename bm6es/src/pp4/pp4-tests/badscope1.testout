@@ -1,0 +1,12 @@
+
+*** Error line 2.
+int gVar;
+    ^^^^
+*** Declaration of 'gVar' here conflicts with declaration on line 1
+
+
+*** Error line 6.
+  int lVar;
+      ^^^^
+*** Declaration of 'lVar' here conflicts with declaration on line 5
+

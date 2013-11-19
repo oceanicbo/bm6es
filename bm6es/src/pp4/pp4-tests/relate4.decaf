@@ -1,0 +1,8 @@
+void main()
+{
+ // all of these are errors because of comingled numeric types
+  1 < 2.0;
+  1 > 2.0;
+  1 <= 2.0;
+  1 >= 2.0;
+}

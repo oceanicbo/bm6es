@@ -1,0 +1,12 @@
+
+*** Error line 5.
+  function = function;
+  ^^^^^^^^
+*** No declaration found for variable 'function'
+
+
+*** Error line 5.
+  function = function;
+             ^^^^^^^^
+*** No declaration found for variable 'function'
+

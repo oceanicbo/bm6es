@@ -1,0 +1,10 @@
+void Binky() {}
+
+void main()
+{
+  int[] arr;
+  Print(1.0);
+  Print(arr);
+  Print(Binky());
+  Print(1, "string", 1.0, 3);
+}

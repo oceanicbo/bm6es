@@ -1,0 +1,12 @@
+class Cow
+{
+  void init()
+  {
+    Cow betsy;
+    betsy = this;
+  }
+}
+
+void main() {
+	this;
+}

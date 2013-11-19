@@ -1,0 +1,6 @@
+
+*** Error line 5.
+    b.Moo;
+      ^^^
+*** Cow field 'Moo' only accessible within class scope
+

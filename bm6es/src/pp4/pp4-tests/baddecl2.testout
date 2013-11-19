@@ -1,0 +1,6 @@
+
+*** Error line 3.
+void function2(int a, Missing b) {}
+                      ^^^^^^^
+*** No declaration found for type 'Missing'
+

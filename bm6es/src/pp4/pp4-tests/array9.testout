@@ -1,0 +1,6 @@
+
+*** Error line 10.
+     num = arr.length;
+               ^^^^^^
+*** int[] has no such field 'length'
+

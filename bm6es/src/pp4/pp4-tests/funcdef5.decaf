@@ -1,0 +1,13 @@
+void Recur(int a)
+{
+    if (a == 0) return;
+    Recur(a - 1);
+}
+
+void BadRecur(int a, double b)
+{
+    BadRecur(4);
+}
+
+void main()
+{}

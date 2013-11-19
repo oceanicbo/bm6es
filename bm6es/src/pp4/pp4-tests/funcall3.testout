@@ -1,0 +1,36 @@
+
+*** Error line 5.
+  foo(1, 1, true);
+         ^
+*** Incompatible argument 2: int given, double expected
+
+
+*** Error line 6.
+  foo(1, 1.0, 1);
+              ^
+*** Incompatible argument 3: int given, bool expected
+
+
+*** Error line 7.
+  foo(1.0, 1.0, true);
+      ^^^
+*** Incompatible argument 1: double given, int expected
+
+
+*** Error line 8.
+  foo(1, 1.0, 1.0);
+              ^^^
+*** Incompatible argument 3: double given, bool expected
+
+
+*** Error line 9.
+  foo(true, 1.0, true);
+      ^^^^
+*** Incompatible argument 1: bool given, int expected
+
+
+*** Error line 10.
+  foo(1, true, true);
+         ^^^^
+*** Incompatible argument 2: bool given, double expected
+

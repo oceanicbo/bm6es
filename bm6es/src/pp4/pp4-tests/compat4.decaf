@@ -1,0 +1,9 @@
+class Cow {}
+
+void main()
+{
+  Cow betsy;
+  Cow moo;
+
+  betsy = moo;
+}

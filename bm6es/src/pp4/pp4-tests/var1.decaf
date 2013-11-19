@@ -1,0 +1,11 @@
+int global;
+
+class Animal {
+    void Init() { global = 10; }
+}
+void main() {
+  global = 4;
+  {
+    global = 3;
+   }
+}

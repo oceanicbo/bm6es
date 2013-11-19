@@ -1,0 +1,6 @@
+
+*** Error line 5.
+	w.NotImplemented();
+          ^^^^^^^^^^^^^^
+*** Winky has no such field 'NotImplemented'
+

@@ -1,0 +1,12 @@
+
+*** Error line 3.
+  break;
+  ^^^^^
+*** break is only allowed inside a loop
+
+
+*** Error line 4.
+  if (true) break;
+            ^^^^^
+*** break is only allowed inside a loop
+

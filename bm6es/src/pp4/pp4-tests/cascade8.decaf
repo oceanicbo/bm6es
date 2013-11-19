@@ -1,0 +1,7 @@
+void main()
+{
+    int[] a;
+
+// there are 2 errors here
+    a = NewArray(5.0, double); 
+}

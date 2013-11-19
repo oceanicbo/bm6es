@@ -1,0 +1,14 @@
+class Cow { void Moo() {} }
+
+void main()
+{
+    double d;
+    double[] darr;
+    Cow[] c;
+    bool[][] b;
+    bool e;
+
+    d = darr[0];
+    c[0].Moo();
+    e = b[0][3];
+}

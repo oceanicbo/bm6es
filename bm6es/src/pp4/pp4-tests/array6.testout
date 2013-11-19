@@ -1,0 +1,18 @@
+
+*** Error line 7.
+  a[2];
+  ^
+*** [] can only be applied to arrays
+
+
+*** Error line 8.
+  b[1][2];
+  ^^^^
+*** [] can only be applied to arrays
+
+
+*** Error line 9.
+  c[0];
+  ^
+*** [] can only be applied to arrays
+

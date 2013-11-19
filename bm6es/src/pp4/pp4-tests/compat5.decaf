@@ -1,0 +1,15 @@
+interface Milkable {}
+class Cow implements Milkable {}
+
+void Milk(Milkable o) {}
+
+Milkable Test() {
+	Cow betsy;
+	Milkable m;
+	m = betsy;
+	Milk(betsy);
+	return betsy;
+}
+
+void main()
+{}

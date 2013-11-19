@@ -1,0 +1,11 @@
+void foo(int a, double b, bool c) {}
+
+void main()
+{
+  foo(1, 1, true);
+  foo(1, 1.0, 1);
+  foo(1.0, 1.0, true);
+  foo(1, 1.0, 1.0);
+  foo(true, 1.0, true);
+  foo(1, true, true);
+}

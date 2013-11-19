@@ -1,0 +1,5 @@
+Unknown function1() {}
+
+void function2(int a, Missing b) {}
+
+void main() {}

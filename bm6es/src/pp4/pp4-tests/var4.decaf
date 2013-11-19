@@ -1,0 +1,23 @@
+// this is here to test that look up name will find in parent, not
+// global in this situation.
+
+int var;
+void Do() { }
+
+class Mammal {
+   string var;
+   void Init() { Do(); }
+}
+
+class Animal extends Mammal {
+   void Do(int a) {}
+}
+
+class Dog extends Animal {
+   void bark() {
+     var = "bark";
+	Do(3);
+   }
+}
+
+void main() {}

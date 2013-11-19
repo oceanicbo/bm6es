@@ -1,0 +1,18 @@
+
+*** Error line 5.
+  a[1.0];
+    ^^^
+*** Array subscript must be an integer
+
+
+*** Error line 6.
+  a[true];
+    ^^^^
+*** Array subscript must be an integer
+
+
+*** Error line 7.
+  a[null];
+    ^^^^
+*** Array subscript must be an integer
+

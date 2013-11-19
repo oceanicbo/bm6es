@@ -1,0 +1,36 @@
+
+*** Error line 11.
+  b = getInt();
+    ^
+*** Incompatible operands: double = int
+
+
+*** Error line 12.
+  c = getInt();
+    ^
+*** Incompatible operands: bool = int
+
+
+*** Error line 14.
+  a = getDouble();
+    ^
+*** Incompatible operands: int = double
+
+
+*** Error line 15.
+  c = getDouble();
+    ^
+*** Incompatible operands: bool = double
+
+
+*** Error line 17.
+  a = getBool();
+    ^
+*** Incompatible operands: int = bool
+
+
+*** Error line 18.
+  b = getBool();
+    ^
+*** Incompatible operands: double = bool
+

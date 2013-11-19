@@ -1,0 +1,18 @@
+
+*** Error line 3.
+  (1 * 2.0) + 3;
+     ^
+*** Incompatible operands: int * double
+
+
+*** Error line 4.
+  (1 * 2.0) < 3;
+     ^
+*** Incompatible operands: int * double
+
+
+*** Error line 5.
+  a == 3;
+  ^
+*** No declaration found for variable 'a'
+

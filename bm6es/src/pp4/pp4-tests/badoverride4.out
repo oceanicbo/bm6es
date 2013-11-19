@@ -1,0 +1,6 @@
+
+*** Error line 5.
+	void TapDance(string a, int b) {}
+             ^^^^^^^^
+*** Method 'TapDance' must match inherited type signature
+

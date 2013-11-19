@@ -1,0 +1,12 @@
+
+*** Error line 9.
+  b = ReadInteger();
+    ^
+*** Incompatible operands: double = int
+
+
+*** Error line 11.
+  d = ReadLine();
+    ^
+*** Incompatible operands: double = string
+

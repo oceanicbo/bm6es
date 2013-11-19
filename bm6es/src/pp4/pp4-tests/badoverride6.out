@@ -1,0 +1,18 @@
+
+*** Error line 9.
+	double[] Binky() { return h;}
+                 ^^^^^
+*** Method 'Binky' must match inherited type signature
+
+
+*** Error line 10.
+	void Dinky(double[][] a) {}
+             ^^^^^
+*** Method 'Dinky' must match inherited type signature
+
+
+*** Error line 11.
+	void Winky(int[] a) {}
+             ^^^^^
+*** Method 'Winky' must match inherited type signature
+

@@ -1,0 +1,10 @@
+void main()
+{
+  int[] a;
+  int[] b;
+  int[][] c;
+
+  a = b;
+  b = c[3];
+  c[2] = NewArray(5, int);
+}

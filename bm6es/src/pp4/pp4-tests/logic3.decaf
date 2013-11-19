@@ -1,0 +1,27 @@
+bool boolFn() { return true;}
+class Cow {
+	bool Get() { return true; }
+	void Inside() {
+	 bool a;
+	  if(a && true) ;
+	  if(boolFn()) ;
+}
+}
+
+		
+
+void main()
+{
+  bool a;
+  Cow c;
+  bool[] arr;
+
+  while(true) {}
+  while(2 < 3) {}
+  while (a) ;
+
+  for(; 3 == 5;) {}
+  for(; c.Get();) {}
+  for(; arr[0];) {}
+
+}

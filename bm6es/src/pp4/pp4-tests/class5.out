@@ -1,0 +1,6 @@
+
+*** Error line 10.
+  betsy.size = 4;
+        ^^^^
+*** Cow field 'size' only accessible within class scope
+

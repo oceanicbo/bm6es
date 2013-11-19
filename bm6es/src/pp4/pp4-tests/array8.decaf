@@ -1,0 +1,13 @@
+class Binky {}
+void main()
+{
+    int[] a;
+    int num;
+    Binky[] b;
+    bool[] c;
+    double[] d;
+    num = a.length();
+    num = b.length();
+    num = c.length();
+    num = d.length();
+}

@@ -1,0 +1,6 @@
+
+*** Error line 4.
+  a();
+  ^
+*** No declaration found for function 'a'
+

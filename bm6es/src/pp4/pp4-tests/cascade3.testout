@@ -1,0 +1,24 @@
+
+*** Error line 4.
+  Missing[] m; 
+  ^^^^^^^
+*** No declaration found for type 'Missing'
+
+
+*** Error line 8.
+  m = NewArray(10, Missing);
+                   ^^^^^^^
+*** No declaration found for type 'Missing'
+
+
+*** Error line 14.
+  d = arr[n]; 
+          ^
+*** No declaration found for variable 'n'
+
+
+*** Error line 14.
+  d = arr[n]; 
+    ^
+*** Incompatible operands: double = int
+

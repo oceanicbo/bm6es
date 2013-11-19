@@ -1,0 +1,7 @@
+void foo(int a, double b, bool c)
+{
+  a = 1;
+  b = 2.0;
+  c = false;
+}
+void main() {}

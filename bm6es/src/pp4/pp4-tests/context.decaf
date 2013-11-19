@@ -1,0 +1,23 @@
+void Binky(int a, int b) {}
+	
+	
+int Dinky(int same)
+{
+    if (true)
+       return;
+    return 1.0 * 3.0;
+}
+
+void main() {
+   int inuse;
+   double d;
+   undeclared = 5;
+   1 + 1.5;
+   inuse + 4 * (2 / missing);
+   Print(d);
+   Binky(Dinky(4));
+   Binky("string", 3);
+   break;
+}
+
+
