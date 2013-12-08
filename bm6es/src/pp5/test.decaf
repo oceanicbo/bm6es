@@ -1,0 +1,19 @@
+class Yes{
+    string a;
+    string b;
+    string c;
+    string d;
+    string yesIsNotYes(){
+        a = "0";
+        b = "0";
+        c = "0";
+        d = "0";
+        return "";
+    }
+}
+
+string main()
+{
+    string a;
+    return 0;
+}

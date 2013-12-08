@@ -1,0 +1,6 @@
+life.decaf
+minwsweep.decaf
+peoplesearch.decaf
+t8.decaf
+tictactoe.decaf
+
